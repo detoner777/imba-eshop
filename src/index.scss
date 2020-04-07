@@ -1,5 +1,11 @@
-@import './components/header';
+@import './components/Header/header';
+@import './pages/Home/home';
+@import './components/Product/product';
 
+
+body {
+  font-family: 'Open Sans';
+}
 body {
   margin: 0;
   font-family: GothamProBold, Arial, sans-serif;
@@ -11,4 +17,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-

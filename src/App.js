@@ -9,14 +9,14 @@ import {
 import Container from "react-bootstrap/Container";
 
 import Header from "./components/Header";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <Fragment>
       <Header />
-      <Container>
-        <h1>1213</h1>
-      </Container>
+
+      <Home />
     </Fragment>
   );
 };

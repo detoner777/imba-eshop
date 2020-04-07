@@ -4,7 +4,7 @@
 }
 
 #shoping_cart {
-  padding-left: 2rem;
+  padding-left: 110%;
   height: 30px;
 }
 
@@ -21,17 +21,17 @@
   a:after {
 	display: block;
 	left: 0;
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: black; /*задаём цвет линии*/
+	width: 0;
+	height: 2px; 
+	background-color: black; 
 	position: relative;
 	top: 22px;
 	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+	transition: width 0.3s ease-out; 
 }
 a:hover:after,
 a:focus:after {
-	width: 5rem; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	width: 5rem; 
 }
 }
 
@@ -45,3 +45,10 @@ a:focus:after {
 .navbar-toggler {
   border: 1px;
 }
+
+@media screen and (max-width: 992px) {
+	
+#shoping_cart {
+		padding-left: 0;
+	}
+  }
