@@ -8,6 +8,7 @@ import Col from "react-bootstrap/Col";
 import SoldOut from "./components/SoldOut";
 import WinStrike from "./components/WinStrike";
 import SponsorsAbout from "./components/SponsorsAbout";
+import BlogersSlider from "./components/BlogersSlider";
 
 import headerCover from "../../assets/home/banner-img.png";
 
@@ -37,6 +38,7 @@ const Home = () => {
       {/* Index Header end */}
       <WinStrike />
       <SponsorsAbout />
+      <BlogersSlider />
     </Fragment>
   );
 };
