@@ -161,20 +161,46 @@
     left: -13rem;
     right: 0;
     margin: auto;
-   
-
-
 	overflow: hidden;
 	}
 //  ---------Header content end ----------
 
-// .index-header:after {
-// 	background: url(../../assets/home/banner-img.png);
-// 	content: '';
-// 	height: 590px;
-// 	width: 100%;
-// 	display: block;
-// 	top: 0;
-// 	left: 0;
-// 	margin: auto;
-// }
+
+// ---------WinStrike start-----------
+.winstike {
+width: 100%;
+background: #000E40;
+.wrapper{
+	max-width: 1090px;
+	background: url(../../assets/team-img.png) bottom right no-repeat;
+	height: 150px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+}
+.winstike__text {
+	font-size: 48px;
+    text-align: center;
+    color: #fff;
+	font-weight: 900;
+	font-style: italic;;
+    text-transform: uppercase;
+    max-width: 462px;
+	padding-top: 11px;
+	
+	#win1{
+		color: #CA0A71;
+			}
+	#win3{
+		color: #0c6;
+	}
+	p{
+		margin-top: -15px;
+	}
+}
+
+
+
+// ---------WinStrike end-----------
+
+

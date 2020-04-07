@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 
 import SoldOut from "./components/SoldOut";
+import WinStrike from "./components/WinStrike";
 
 import headerCover from "../../assets/home/banner-img.png";
 
@@ -33,6 +34,7 @@ const Home = () => {
         </div>
       </div>
       {/* Index Header end */}
+      <WinStrike />
     </Fragment>
   );
 };
