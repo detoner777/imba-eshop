@@ -1,12 +1,12 @@
 import React, { Fragment, useEffect } from "react";
 import { withRouter } from "react-router";
+import { LinkContainer } from "react-router-bootstrap";
+
 import connect from "react-redux";
 
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Badge from "react-bootstrap/Badge";
 
 import logo from "../../assets/logo.svg";
 import shoping_cart from "../../assets/icons/shopping_cart.png";
@@ -21,7 +21,7 @@ const Header = () => {
       sticky="top"
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/home">
           <img src={logo} className="logo" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -34,10 +34,11 @@ const Header = () => {
               <Nav.Link href="/victory">Розыгрыш!</Nav.Link>
               <Nav.Link href="/contacts">Контакты</Nav.Link>
             </Nav>
-
-            <Nav.Link>
-              <img src={shoping_cart} alt="shoping-cart" id="shoping_cart" />{" "}
-            </Nav.Link>
+            <LinkContainer to="/cart">
+              <Nav.Link>
+                <img src={shoping_cart} alt="shoping-cart" id="shoping_cart" />{" "}
+              </Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>
