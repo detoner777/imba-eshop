@@ -16,11 +16,11 @@ import Youtube from "../../../assets/icons/youtube.png";
 
 const BlogersSlider = () => {
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(null);
+  // const [direction, setDirection] = useState(null);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
-    setDirection(e.direction);
+    // setDirection(e.direction);
   };
 
   return (
@@ -31,9 +31,9 @@ const BlogersSlider = () => {
           {({ width }) => (
             <Carousel
               activeIndex={index}
-              direction={direction}
+              // direction={direction}
               onSelect={handleSelect}
-              interval={null}
+              interval={2000}
             >
               <Carousel.Item>
                 <div className="carousel-item-wrapper" style={{ width }}>
@@ -41,7 +41,7 @@ const BlogersSlider = () => {
                   <img
                     className="img-obj-fit"
                     src={TipDota}
-                    alt="First slide"
+                    alt="Zero slide"
                   />
                   <div className="carousel-content">
                     <h3>
@@ -66,7 +66,7 @@ const BlogersSlider = () => {
                   <img
                     className="img-obj-fit"
                     src={SamJhon}
-                    alt="Second slide"
+                    alt="First slide"
                   />
                   <div className="carousel-content">
                     <h3>
@@ -91,7 +91,7 @@ const BlogersSlider = () => {
                   {" "}
                   <img
                     className="img-obj-fit"
-                    src={SamJhon}
+                    src={Murcci}
                     alt="Second slide"
                   />
                   <div className="carousel-content">

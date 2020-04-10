@@ -6,18 +6,24 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import Container from "react-bootstrap/Container";
-
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Cart from "./pages/Cart";
 
 const App = () => {
   return (
-    <Fragment>
+    <Router>
       <Header />
-
-      <Home />
-    </Fragment>
+      <Switch>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+        <Route path="/home" exact component={Home} />
+        <Route path="/products" exact component={Products} />
+        <Route path="/cart" exact component={Cart} />
+      </Switch>
+    </Router>
   );
 };
 
