@@ -1,5 +1,5 @@
 import * as Types from "../types";
-import { config } from "../../services/config";
+import { config } from "../../pages/services/config";
 
 const initialState = {
   isLoading: false,
