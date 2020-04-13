@@ -3,27 +3,26 @@ import _ from "lodash";
 
 const brandAndImage = _.flatten(
   _.times(20, (i) => {
-    return ["box", "carpet", "imbacombo", "shaker", "ziplock"].map(
-      (brand, j) => {
-        return { brand, image: `${brand}${i + 1}.png` };
-      }
-    );
+    return ["imbacombo", "shaker", "ziplock"].map((brand, j) => {
+      return { brand, image: `${brand}${i + 1}.png` };
+    });
   })
 );
 
 const imageColorMap = [
-  { brand: "box1", color: "red" },
-  { brand: "box2", color: "yellow" },
-  { brand: "carpet1", color: "black" },
+  // { brand: "box1", color: "red" },
+  // { brand: "box2", color: "yellow" },
+  // { brand: "carpet1", color: "black" },
   { brand: "imbacombo1", color: "black" },
   { brand: "imbacombo2", color: "black" },
+  { brand: "imbacombo3", color: "black" },
   { brand: "imbacombo4", color: "green" },
   { brand: "imbacombo5", color: "green" },
-  { brand: "imbacombo6", color: "red" },
-  { brand: "imbacombo7", color: "black" },
-  { brand: "imbacombo8", color: "white" },
-  { brand: "imbacombo9", color: "green" },
-  { brand: "imbacombo10", color: "blue" },
+  // { brand: "imbacombo6", color: "red" },
+  // { brand: "imbacombo7", color: "black" },
+  // { brand: "imbacombo8", color: "white" },
+  // { brand: "imbacombo9", color: "green" },
+  // { brand: "imbacombo10", color: "blue" },
   { brand: "shaker1", color: "black" },
   { brand: "shaker2", color: "green" },
   { brand: "shaker3", color: "blue" },
@@ -34,13 +33,13 @@ const imageColorMap = [
   { brand: "ziplock3", color: "black" },
   { brand: "ziplock4", color: "blue" },
   { brand: "ziplock5", color: "black" },
-  { brand: "ziplock6", color: "red" },
-  { brand: "ziplock7", color: "yellow" },
-  { brand: "ziplock8", color: "black" },
-  { brand: "ziplock9", color: "black" },
-  { brand: "ziplock10", color: "green" },
-  { brand: "ziplock11", color: "red" },
-  { brand: "ziplock12", color: "red" },
+  // { brand: "ziplock6", color: "red" },
+  // { brand: "ziplock7", color: "yellow" },
+  // { brand: "ziplock8", color: "black" },
+  // { brand: "ziplock9", color: "black" },
+  // { brand: "ziplock10", color: "green" },
+  // { brand: "ziplock11", color: "red" },
+  // { brand: "ziplock12", color: "red" },
 ];
 
 function getRandomInt(min, max) {
@@ -50,9 +49,9 @@ function getRandomInt(min, max) {
 }
 
 const getProducts = () => {
-  const products = _.times(100, (index) => {
+  const products = _.times(15, (index) => {
     const color = imageColorMap.find(
-      (i) => i.brand === brandAndImage[index].image.replace(".jpg", "")
+      (i) => i.brand === brandAndImage[index].image.replace(".png", "")
     ).color;
     // console.log(color);
     return {
