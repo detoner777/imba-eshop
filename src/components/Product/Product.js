@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Spinner from "react-bootstrap/Spinner";
+import ProductSpiner from "../ProductsSpiner";
 
 import { Link } from "react-router-dom";
 
@@ -57,9 +58,7 @@ const Product = ({
         className="container"
         style={{ display: isLoading ? "block" : "none" }}
       >
-        <div className="row justify-content-center align-self-center h-300">
-          <Spinner animation="border" className="align-self-center" />
-        </div>
+        <ProductSpiner />
       </Col>
 
       <Col

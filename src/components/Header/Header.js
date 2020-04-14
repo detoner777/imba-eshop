@@ -10,8 +10,11 @@ import Nav from "react-bootstrap/Nav";
 
 import logo from "../../assets/logo.svg";
 import shoping_cart from "../../assets/icons/shopping_cart.png";
+import { showToast } from "../../store/actions/toast";
 
-const Header = () => {
+const Header = ({ location }) => {
+  const { pathname } = location;
+
   return (
     <Navbar
       collapseOnSelect
@@ -27,7 +30,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav className="nav-pages">
+            <Nav className="nav-pages" activeKey={pathname}>
               {" "}
               <Nav.Link href="/home">Главная</Nav.Link>
               <Nav.Link href="/products">Магазин</Nav.Link>
@@ -62,4 +65,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default withRouter(Header);
