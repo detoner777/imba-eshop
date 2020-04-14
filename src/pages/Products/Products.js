@@ -57,7 +57,7 @@ const Products = ({
     return <Spinner animation="border" className="align-self-center" />;
 
   return (
-    <Fragment>
+    <div className="container">
       <InfiniteScroll
         className="row"
         pageStart={0}
@@ -69,14 +69,14 @@ const Products = ({
           <Product product={product} key={i} />
         ))}
       </InfiniteScroll>
-      {!error && !hasMoreItems && (
+      {/* {!error && !hasMoreItems && (
         <Row className="mb-3">
           <Col>
             <h4 className="text-center">No more products</h4>
           </Col>
         </Row>
-      )}
-    </Fragment>
+      )} */}
+    </div>
   );
 };
 
