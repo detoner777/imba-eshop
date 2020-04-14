@@ -5,7 +5,6 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Spinner from "react-bootstrap/Spinner";
-import ProductSpiner from "../ProductsSpiner";
 
 import { Link } from "react-router-dom";
 
@@ -58,7 +57,9 @@ const Product = ({
         className="container"
         style={{ display: isLoading ? "block" : "none" }}
       >
-        <ProductSpiner />
+        <div className="row justify-content-center align-self-center h-300 product-skeleton">
+          <Spinner animation="border" className="align-self-center" />
+        </div>
       </Col>
 
       <Col
@@ -80,7 +81,10 @@ const Product = ({
             />
           </Link>
           <Card.Body>
-            <h4 className="card-title">{name}</h4>
+            <Link className="card-title" to={`/product-details/${id}`}>
+              {" "}
+              <h4>{name}</h4>
+            </Link>
             <h6 className="card-subtitle mb-2 text-muted">
               Description: {shortDescription}
             </h6>
@@ -95,8 +99,7 @@ const Product = ({
                 onClick={toggleAddProduct}
                 className="add-to-cart mt-3"
               >
-                <i className="fa fa-shopping-cart"></i>{" "}
-                {!isAdded() ? "Add to Cart" : "Added to Cart"}
+                {!isAdded() ? "В КОРЗИНУ" : "  УБРАТЬ  "}
               </Button>
             </div>
           </Card.Body>

@@ -57,7 +57,8 @@ const Products = ({
     return <Spinner animation="border" className="align-self-center" />;
 
   return (
-    <div className="container">
+    <div className='products-wrapper'>
+    <div className="container ">
       <InfiniteScroll
         className="row"
         pageStart={0}
@@ -76,6 +77,7 @@ const Products = ({
           </Col>
         </Row>
       )} */}
+    </div>
     </div>
   );
 };

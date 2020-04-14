@@ -1,0 +1,38 @@
+// --------Single Product start--------
+.product-card {
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  .product-img {
+    object-fit: cover;
+    transition: all 0.5s ease 0s;
+  }
+
+  .card-title {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+  }
+  h4 {
+    margin-bottom: 15px;
+  }
+  .card-title:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+// --------Single Product end--------
+
+// --------Skeleton start--------
+
+.product-skeleton {
+  margin: 100px;
+}
+
+// --------Skeleton end-------
