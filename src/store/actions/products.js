@@ -4,7 +4,7 @@ import axios from "axios";
 import qs from "qs";
 
 export const loadProductsInit = (isLoadMoreRequest) => ({
-  types: isLoadMoreRequest
+  type: isLoadMoreRequest
     ? Types.LOAD_MORE_PRODUCTS_INIT
     : Types.LOAD_PRODUCTS_INIT,
 });

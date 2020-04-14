@@ -14,5 +14,9 @@ export const ADD_PRODUCT_TO_CART = "ADD_PRODUCT_TO_CART";
 export const REMOVE_PRODUCT_FROM_CART = "REMOVE_PRODUCT_FROM_CART";
 export const REMOVE_PRODUCTS_FROM_CART = "REMOVE_PRODUCTS_FROM_CART";
 
-export const SHOW_TOAST = 'SHOW_TOAST';
-export const HIDE_TOAST = 'HIDE_TOAST';
+export const SHOW_TOAST = "SHOW_TOAST";
+export const HIDE_TOAST = "HIDE_TOAST";
+
+export const SET_FILTER_BY = "SET_FILTER_BY";
+export const SET_SORT_BY = "SET_SORT_BY";
+export const SET_PAGE_TO_LOAD = "SET_PAGE_TO_LOAD";
