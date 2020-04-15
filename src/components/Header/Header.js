@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import { withRouter } from "react-router";
 import { LinkContainer } from "react-router-bootstrap";
 
-import connect from "react-redux";
+import { connect } from "react-redux";
 
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
@@ -12,8 +12,15 @@ import logo from "../../assets/logo.svg";
 import shoping_cart from "../../assets/icons/shopping_cart.png";
 import { showToast } from "../../store/actions/toast";
 
-const Header = ({ location }) => {
+const Header = ({ location, cart }) => {
   const { pathname } = location;
+
+  function calcCartLength() {
+    const sum = cart.cartProducts
+      .map((p) => p.quantity)
+      .reduce((a, b) => a + b, 0);
+    return sum;
+  }
 
   return (
     <Navbar
@@ -39,7 +46,12 @@ const Header = ({ location }) => {
             </Nav>
             <LinkContainer to="/cart">
               <Nav.Link>
-                <img src={shoping_cart} alt="shoping-cart" id="shoping_cart" />{" "}
+                <img src={shoping_cart} alt="shoping-cart" id="shoping_cart" />
+                {calcCartLength() > 0 && (
+                  <div className="shopingcart-items-sum">
+                    <span id="calc-length">{calcCartLength()}</span>
+                  </div>
+                )}
               </Nav.Link>
             </LinkContainer>
           </Nav>
@@ -65,4 +77,6 @@ const Header = ({ location }) => {
   );
 };
 
-export default withRouter(Header);
+export default connect((state) => ({ cart: state.cartReducer }))(
+  withRouter(Header)
+);
