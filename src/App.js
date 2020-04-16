@@ -14,6 +14,7 @@ import rootReducer from "./store/reducers";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
+import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 
 import "./fakebackend/axiosData";
@@ -42,6 +43,7 @@ const App = () => {
           </Route>
           <Route path="/home" exact component={Home} />
           <Route path="/products" exact component={Products} />
+          <Route path="/product-details/:id" exact component={ProductDetails} />
           <Route path="/cart" exact component={Cart} />
         </Switch>
       </Provider>

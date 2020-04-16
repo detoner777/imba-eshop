@@ -10,7 +10,6 @@ import Nav from "react-bootstrap/Nav";
 
 import logo from "../../assets/logo.svg";
 import shoping_cart from "../../assets/icons/shopping_cart.png";
-import { showToast } from "../../store/actions/toast";
 
 const Header = ({ location, cart }) => {
   const { pathname } = location;
