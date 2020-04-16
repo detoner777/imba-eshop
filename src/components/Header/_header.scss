@@ -15,31 +15,28 @@
   margin-right: 8rem;
 
   a {
-	width: 2rem;
-
+    width: 2rem;
   }
   a:after {
-	display: block;
-	left: 0;
-	width: 0;
-	height: 2px; 
-	background-color: black; 
-	position: relative;
-	top: 22px;
-	content: "";
-	transition: width 0.3s ease-out; 
-}
-a:hover:after,
-a:focus:after {
-	width: 5rem; 
-}
+    display: block;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: black;
+    position: relative;
+    top: 20px;
+    content: "";
+    transition: width 0.3s ease-out;
+  }
+  a:hover:after,
+  a:focus:after {
+    width: 5rem;
+  }
 }
 
 .sticky-top {
-	box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
-	0 2px 2px rgba(0,0,0,0.15), 
-	0 4px 4px rgba(0,0,0,0.15), 
-	0 8px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-toggler {
@@ -47,8 +44,26 @@ a:focus:after {
 }
 
 @media screen and (max-width: 992px) {
-	
-#shoping_cart {
-		padding-left: 0;
-	}
+  #shoping_cart {
+    padding-left: 0;
   }
+}
+
+.shopingcart-items-sum {
+  position: absolute;
+  text-transform: uppercase;
+  margin: 0 auto;
+  top: 10px;
+  margin-left: 60px;
+  #calc-length {
+    // font-size: 14px;
+    color: white;
+    background: #0c6;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+  }
+}

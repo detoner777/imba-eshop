@@ -37,8 +37,6 @@ export const loadProduct = (id, callback) => async (dispatch, getState) => {
       const response = await axios.get(`/product/${id}`);
       const product = response.data;
 
-      //const product = await getProductPromise(id);
-      // console.log(product);
       dispatch(loadProductSuccess(product));
 
       if (callback) callback();

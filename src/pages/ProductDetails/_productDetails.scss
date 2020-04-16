@@ -1,0 +1,69 @@
+@mixin productColorBody {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-left: 2rem;
+  margin-top: 2px;
+}
+
+.products-details__root {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40rem;
+  width: 100%;
+  .num {
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: normal;
+    color: #f66969;
+  }
+  .currency {
+    font-size: 3rem;
+    color: #f66969;
+  }
+}
+
+.products-details__wrapper {
+  margin-top: 40px;
+  background-color: #ffff;
+  max-width: 1140px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+  .product-color-blue {
+    background-color: rgb(75, 75, 136);
+    @include productColorBody;
+  }
+  .product-color-black {
+    background-color: black;
+    @include productColorBody;
+  }
+  .product-color-green {
+    background-color: rgb(24, 158, 24);
+    @include productColorBody;
+  }
+  .product-color-red {
+    background-color: rgb(156, 26, 26);
+    @include productColorBody;
+  }
+  .product-color-yellow {
+    background-color: rgb(196, 196, 62);
+    @include productColorBody;
+  }
+  .product-color-white {
+    background-color: white;
+    border-color: rgb(202, 202, 202);
+    border-style: solid;
+    @include productColorBody;
+  }
+}
+
+.butn {
+  background-color: #0c6;
+}

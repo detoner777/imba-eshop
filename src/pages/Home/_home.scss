@@ -23,8 +23,8 @@
   #days {
     color: black;
     background: #ff9300;
-    border-radius: 20px;
-    padding: 8px 17px;
+    border-radius: 50%;
+    padding: 6px 14px;
     margin: 0 10px;
     display: inline-block;
     text-align: center;
@@ -286,7 +286,7 @@
 .back h3 {
   color: #ff151f;
 }
-.back h3:hover {
+.back a:hover {
   text-decoration: none;
 }
 .sponsor__h3 {

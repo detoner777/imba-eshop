@@ -1,10 +1,12 @@
-@import './components/Header/header';
-@import './pages/Home/home';
-@import './components/Product/product';
-
+@import "./components/Header/header";
+@import "./pages/Home/home";
+@import "./components/Product/product";
+@import "./pages/Products/products";
+@import "./pages/Cart/cart";
+@import "./pages/ProductDetails/productDetails";
 
 body {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 body {
   margin: 0;
@@ -14,6 +16,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

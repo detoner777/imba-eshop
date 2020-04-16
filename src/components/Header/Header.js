@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import { withRouter } from "react-router";
 import { LinkContainer } from "react-router-bootstrap";
 
-import connect from "react-redux";
+import { connect } from "react-redux";
 
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
@@ -11,7 +11,16 @@ import Nav from "react-bootstrap/Nav";
 import logo from "../../assets/logo.svg";
 import shoping_cart from "../../assets/icons/shopping_cart.png";
 
-const Header = () => {
+const Header = ({ location, cart }) => {
+  const { pathname } = location;
+
+  function calcCartLength() {
+    const sum = cart.cartProducts
+      .map((p) => p.quantity)
+      .reduce((a, b) => a + b, 0);
+    return sum;
+  }
+
   return (
     <Navbar
       collapseOnSelect
@@ -27,16 +36,29 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav className="nav-pages">
+            <Nav className="nav-pages" activeKey={pathname}>
               {" "}
-              <Nav.Link href="/home">Главная</Nav.Link>
-              <Nav.Link href="/products">Магазин</Nav.Link>
-              <Nav.Link href="/victory">Розыгрыш!</Nav.Link>
-              <Nav.Link href="/contacts">Контакты</Nav.Link>
+              <LinkContainer to="/home">
+                <Nav.Link>Главная</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/products">
+                <Nav.Link>Магазин</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/victory">
+                <Nav.Link>Розыгрыш!</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/contacts">
+                <Nav.Link>Контакты</Nav.Link>
+              </LinkContainer>
             </Nav>
             <LinkContainer to="/cart">
               <Nav.Link>
-                <img src={shoping_cart} alt="shoping-cart" id="shoping_cart" />{" "}
+                <img src={shoping_cart} alt="shoping-cart" id="shoping_cart" />
+                {calcCartLength() > 0 && (
+                  <div className="shopingcart-items-sum">
+                    <span id="calc-length">{calcCartLength()}</span>
+                  </div>
+                )}
               </Nav.Link>
             </LinkContainer>
           </Nav>
@@ -62,4 +84,6 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default connect((state) => ({ cart: state.cartReducer }))(
+  withRouter(Header)
+);
