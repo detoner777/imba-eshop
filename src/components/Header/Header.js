@@ -38,10 +38,18 @@ const Header = ({ location, cart }) => {
           <Nav className="mr-auto">
             <Nav className="nav-pages" activeKey={pathname}>
               {" "}
-              <Nav.Link href="/home">Главная</Nav.Link>
-              <Nav.Link href="/products">Магазин</Nav.Link>
-              <Nav.Link href="/victory">Розыгрыш!</Nav.Link>
-              <Nav.Link href="/contacts">Контакты</Nav.Link>
+              <LinkContainer to="/home">
+                <Nav.Link>Главная</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/products">
+                <Nav.Link>Магазин</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/victory">
+                <Nav.Link>Розыгрыш!</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/contacts">
+                <Nav.Link>Контакты</Nav.Link>
+              </LinkContainer>
             </Nav>
             <LinkContainer to="/cart">
               <Nav.Link>
