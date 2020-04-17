@@ -21,8 +21,8 @@ export const addProductToCart = (product) => (dispatch, getState) => {
 
   dispatch(
     showToast({
-      title: "Notification",
-      text: `You added the ${product.name} to the cart.`,
+      title: "",
+      text: `Вы добавили ${product.name} в корзину.`,
     })
   );
 
@@ -48,8 +48,8 @@ export const removeProductFromCart = (product) => (dispatch, getState) => {
 
   dispatch(
     showToast({
-      title: "Notification",
-      text: `You removed the ${product.name} from the cart.`,
+      title: "",
+      text: `Вы убрали ${product.name} с корзины.`,
     })
   );
 
@@ -65,8 +65,8 @@ export const removeProductsFromCart = (product) => (dispatch, getState) => {
 
   dispatch(
     showToast({
-      title: "Notification",
-      text: `You removed all of the ${product.name}'s from the cart.`,
+      title: "",
+      text: `Вы убрали все ${product.name} продукты с корзины.`,
     })
   );
 

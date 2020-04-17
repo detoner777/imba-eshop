@@ -24,12 +24,12 @@ const MyToast = ({ toast: { show, title, text }, showToast, hideToast }) => {
         <Toast.Header>
           <img
             src={require(`../../assets/logo.svg`)}
-            style={{ width: 20, height: 20, objectFit: "cover" }}
+            style={{ width: 30, height: 30 }}
             className="rounded mr-2"
             alt=""
           />
           <strong className="mr-auto">{title}</strong>
-          <small>right now</small>
+          {/* <small>right now</small> */}
         </Toast.Header>
         <Toast.Body>{text}</Toast.Body>
       </Toast>

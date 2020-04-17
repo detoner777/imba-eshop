@@ -60,13 +60,13 @@ const ProductDetails = ({
     const isAdded =
       cart.cartProducts.length > 0 &&
       cart.cartProducts.find((p) => p.product.id === product.id);
-    console.log(`isAdded = ${isAdded}`);
+    // console.log(`isAdded = ${isAdded}`);
     return isAdded;
   }
 
   if (error) return <Redirect to={"/error"} />;
   if (isLoading) return <Spinner />;
-  console.log(productDetails);
+  // console.log(productDetails);
 
   return (
     product && (

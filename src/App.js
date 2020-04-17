@@ -18,6 +18,7 @@ import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import Error from "./components/Error";
+import MyToast from "./components/MyToast";
 
 import "./fakebackend/axiosData";
 
@@ -50,6 +51,7 @@ const App = () => {
           <Route path="/error" exact component={Error} />
         </Switch>
         <Footer />
+        <MyToast />
       </Provider>
     </Router>
   );
