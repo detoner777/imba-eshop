@@ -90,7 +90,11 @@ const Cart = ({
                           type="button"
                           className="btn btn-outline-danger btn-xs"
                         >
-                          <img src={trash} className="cart-trash-img" />
+                          <img
+                            src={trash}
+                            className="cart-trash-img"
+                            alt="delete"
+                          />
                         </button>
                       </div>
                     </div>

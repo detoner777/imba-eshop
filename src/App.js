@@ -12,6 +12,7 @@ import thunk from "redux-thunk";
 import rootReducer from "./store/reducers";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
@@ -46,6 +47,7 @@ const App = () => {
           <Route path="/product-details/:id" exact component={ProductDetails} />
           <Route path="/cart" exact component={Cart} />
         </Switch>
+        <Footer />
       </Provider>
     </Router>
   );

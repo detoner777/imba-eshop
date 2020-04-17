@@ -1,0 +1,111 @@
+@mixin footer-foots {
+  display: flex;
+  flex-direction: column;
+  h5 {
+    color: white;
+  }
+}
+
+.footer-wrapper {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .footer-header {
+    width: 100%;
+    padding: 1.1rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+  .footer-header * {
+    color: grey;
+  }
+}
+
+#footer-hr {
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+// ---------Footer foot part start-----------
+.footer-foot-wrapper {
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: grey;
+}
+
+.footer-foot__logo {
+  display: flex;
+  flex-direction: column;
+  .footer-foot__logo_img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    .footer-foot__logo g {
+      fill: white;
+    }
+    .footer-foot__logo {
+      width: 120px;
+    }
+  }
+}
+
+.footer-foot__contacts {
+  @include footer-foots;
+  .footer__link {
+    // text-decoration: none;
+    color: grey;
+  }
+  .footer__link--ptop {
+    margin-top: 1.2rem;
+  }
+}
+.footer-foot__payments {
+  float: left;
+  @include footer-foots;
+  span {
+  }
+  .foot__payments_icon {
+    margin-right: 20px;
+    margin-top: 10px;
+    display: block;
+    float: left;
+  }
+}
+
+.footer-foot__social {
+  @include footer-foots;
+  .foot__social__icon {
+    margin-right: 20px;
+  }
+  span .twitter:hover {
+    filter: sepia(1) hue-rotate(150deg) saturate(4) brightness(1);
+  }
+  span .instagram:hover {
+    filter: sepia(1) hue-rotate(300deg) saturate(4) brightness(1);
+  }
+  span .vk:hover {
+    filter: sepia(1) hue-rotate(200deg) saturate(4) brightness(1);
+  }
+}
+
+.footer-foot__oferta {
+  @include footer-foots;
+  .foot__oferta_logo {
+    color: grey;
+  }
+}
+
+// ---------Footer foot part end-----------
