@@ -44,11 +44,11 @@ const Header = ({ location, cart }) => {
               <LinkContainer to="/products">
                 <Nav.Link>Магазин</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/victory">
-                <Nav.Link>Розыгрыш!</Nav.Link>
-              </LinkContainer>
               <LinkContainer to="/contacts">
                 <Nav.Link>Контакты</Nav.Link>
+              </LinkContainer>
+              <LinkContainer className="header__delivery" to="/delivery">
+                <Nav.Link>Доставка</Nav.Link>
               </LinkContainer>
             </Nav>
             <LinkContainer to="/cart">
