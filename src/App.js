@@ -24,18 +24,32 @@ import Delivery from "./pages/Delivery";
 
 import "./fakebackend/axiosData";
 
+import { loadState, saveState } from "./store/localStorage";
+import throttle from "lodash/throttle";
+
 const App = () => {
+  const persistedState = loadState();
   const initialState = {};
 
   const store = createStore(
     rootReducer,
-    initialState,
+    // initialState,
+    persistedState,
     compose(
       applyMiddleware(thunk),
       (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ &&
         window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()) ||
         compose
     )
+  );
+
+  store.subscribe(
+    throttle(() => {
+      saveState({
+        cartReducer: store.getState().cartReducer,
+      });
+      // console.log(store);
+    }, 1000)
   );
 
   return (
