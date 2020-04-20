@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-import shoping_cart from "../../assets/icons/shopping_cart.png";
 import trash from "../../assets/icons/trash.png";
 import korzina from "../../assets/icons/korzina.svg";
 
