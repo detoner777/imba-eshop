@@ -44,16 +44,16 @@ const Header = ({ location, cart }) => {
               <LinkContainer to="/products">
                 <Nav.Link>Магазин</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/victory">
-                <Nav.Link>Розыгрыш!</Nav.Link>
-              </LinkContainer>
               <LinkContainer to="/contacts">
                 <Nav.Link>Контакты</Nav.Link>
+              </LinkContainer>
+              <LinkContainer className="header__delivery" to="/delivery">
+                <Nav.Link>Доставка</Nav.Link>
               </LinkContainer>
             </Nav>
             <LinkContainer to="/cart">
               <Nav.Link>
-                <img src={shoping_cart} alt="shoping-cart" id="shoping_cart" />
+                <img src={shoping_cart} alt="" id="shoping_cart" />
                 {calcCartLength() > 0 && (
                   <div className="shopingcart-items-sum">
                     <span id="calc-length">{calcCartLength()}</span>

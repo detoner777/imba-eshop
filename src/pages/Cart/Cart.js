@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-import shoping_cart from "../../assets/icons/shopping_cart.png";
 import trash from "../../assets/icons/trash.png";
 import korzina from "../../assets/icons/korzina.svg";
 
@@ -64,7 +63,7 @@ const Cart = ({
                         style={{ paddingTop: 5 }}
                       >
                         <h5>
-                          <strong>${product.price.toFixed(2)}</strong>
+                          <strong>${product.price.toFixed(0)}</strong>
                         </h5>
                       </div>
                       <div className="col-4 col-sm-4 col-md-4">
@@ -90,7 +89,11 @@ const Cart = ({
                           type="button"
                           className="btn btn-outline-danger btn-xs"
                         >
-                          <img src={trash} className="cart-trash-img" />
+                          <img
+                            src={trash}
+                            className="cart-trash-img"
+                            alt="delete"
+                          />
                         </button>
                       </div>
                     </div>
@@ -101,14 +104,14 @@ const Cart = ({
 
               <div className="pull-right">
                 <Link to={"/products"}>
-                  <button className="btn btn-outline-primary pull-right">
-                    Continue shopping
+                  <button className="btn btn-outline-success pull-right">
+                    Перейти к выбору
                   </button>
                 </Link>
               </div>
             </div>
             <div className="card-footer">
-              <div className="coupon col-md-5 col-sm-5 no-padding-left pull-left">
+              {/* <div className="coupon col-md-5 col-sm-5 no-padding-left pull-left">
                 <div className="row">
                   <div className="col-6">
                     <input
@@ -125,19 +128,19 @@ const Cart = ({
                     />
                   </div>
                 </div>
-              </div>
-              <div className="pull-right" style={{ margin: 10 }}>
-                <a href="" className="btn btn-primary pull-right">
-                  Checkout
+              </div> */}
+              <div className="pull-left cart-footer" style={{ margin: 10 }}>
+                <a href="" className="btn btn-success pull-right">
+                  ОФОРМИТЬ ЗАКАЗ
                 </a>
-                <div className="pull-right" style={{ margin: 5 }}>
-                  Total price:{" "}
+                <div className="total-price" style={{ margin: 5 }}>
+                  <span>Всего: </span>
                   <b>
                     $
                     {cartProducts
                       .map((p) => p.product.price * p.quantity)
                       .reduce((a, b) => a + b, 0)
-                      .toFixed(2)}
+                      .toFixed(0)}
                   </b>
                 </div>
               </div>

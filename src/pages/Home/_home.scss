@@ -407,3 +407,125 @@
   background-color: #080d15;
   opacity: 0.5;
 }
+
+// ------------Imba battle start-----------
+.imba-battle {
+  background: #000 url(../../assets/home/imbatle_bg.jpg) top center no-repeat;
+  padding: 50px 0 0;
+  .imba-battle-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+
+    /* ---------Tite--------- */
+    .imbattle__title {
+      color: #0c6;
+      font-size: 36px;
+      font-weight: 700;
+      background: url(../../assets/home/imbattleblure.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    .title {
+      height: 40px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom: 18px;
+    }
+    /* ---------Tite--------- */
+    .imbattle__h1 {
+      font-size: 18px;
+      padding: 0 0 5px;
+      color: #fff;
+      text-align: center;
+      font-weight: 400;
+    }
+    .imbattle__h3 {
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+    }
+    // -------------Content-------------
+    .imbattle__block-container {
+      padding-top: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 600px;
+
+      .imbattle__vs {
+        width: 110px;
+        text-align: center;
+        color: #ecba16;
+        font-weight: 700;
+        font-size: 50px;
+        text-transform: uppercase;
+        margin: 20px;
+      }
+
+      .imbattle__pane-item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 22px;
+      }
+      .yellow {
+        .imbattle__pane-header {
+          color: #ecba16;
+          font-size: 18px;
+          font-weight: 700;
+          padding-bottom: 28px;
+        }
+        .imbattle__txt {
+          color: white;
+          font-size: 14px;
+          // line-height: 18px;
+          margin: 5px;
+        }
+        .imbattle__pane-item {
+          color: #ecba16;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .imbattle__num {
+          color: #ecba16;
+          // width: 55px;
+          font-size: 24px;
+          font-weight: 700;
+          margin: 5px;
+        }
+      }
+      .green {
+        .imbattle__pane-header {
+          color: #01cc65;
+          font-size: 18px;
+          font-weight: 700;
+          padding-bottom: 28px;
+        }
+        .imbattle__txt {
+          color: white;
+          font-size: 14px;
+          // line-height: 18px;
+          margin: 5px;
+        }
+        .imbattle__pane-item {
+          color: #01cc65;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .imbattle__num {
+          color: #01cc65;
+          // width: 55px;
+          font-size: 24px;
+          font-weight: 700;
+          margin: 5px;
+        }
+      }
+    }
+    .imbattle__gifs {
+      width: 100%;
+    }
+    // -------------Content-------------
+  }
+}
+// ------------Imba battle end-----------

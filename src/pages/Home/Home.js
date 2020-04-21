@@ -9,6 +9,7 @@ import SoldOut from "./components/SoldOut";
 import WinStrike from "./components/WinStrike";
 import SponsorsAbout from "./components/SponsorsAbout";
 import BlogersSlider from "./components/BlogersSlider";
+import ImbaBattle from "./components/ImbaBattle";
 
 import headerCover from "../../assets/home/banner-img.png";
 
@@ -18,7 +19,7 @@ const Home = () => {
       <SoldOut />
       {/* Index Header start */}
       <div className="index-header">
-        <img src={headerCover} />
+        <img src={headerCover} alt="" />
         <div className="container-header-content">
           {" "}
           <div className="index-header__content">
@@ -39,6 +40,7 @@ const Home = () => {
       <WinStrike />
       <SponsorsAbout />
       <BlogersSlider />
+      <ImbaBattle />
     </Fragment>
   );
 };

@@ -86,16 +86,20 @@ const Product = ({
               <h4>{name}</h4>
             </Link>
             <h6 className="card-subtitle mb-2 text-muted">
-              Description: {shortDescription}
+              <span>Описание:</span> {shortDescription}
             </h6>
-            <Card.Text>{description}</Card.Text>
+            {/* <Card.Text>{description}</Card.Text> */}
 
             <div className="buy d-flex justify-content-between align-items-center">
               <div className="price text-success">
-                <h5 className="mt-4">${price.toFixed(2)}</h5>
+                <h5 className="mt-4 ">
+                  {" "}
+                  {price.toFixed(0)}
+                  <span> $ </span>
+                </h5>
               </div>
               <Button
-                variant={!isAdded() ? "outline-primary" : "danger"}
+                variant={!isAdded() ? "success" : "outline-danger"}
                 onClick={toggleAddProduct}
                 className="add-to-cart mt-3"
               >

@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router";
 import { Redirect } from "react-router-dom";
 
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 import Spinner from "react-bootstrap/Spinner";
 
 import { loadProduct } from "../../store/actions/productDetails";
@@ -46,17 +48,25 @@ const ProductDetails = ({
     }
   }
 
+  function renderTooltip(props) {
+    return (
+      <Tooltip id="button-tooltip" {...props}>
+        Имбовый стикерпак в подарок!
+      </Tooltip>
+    );
+  }
+
   function isAdded() {
     const isAdded =
       cart.cartProducts.length > 0 &&
       cart.cartProducts.find((p) => p.product.id === product.id);
-    console.log(`isAdded = ${isAdded}`);
+    // console.log(`isAdded = ${isAdded}`);
     return isAdded;
   }
 
   if (error) return <Redirect to={"/error"} />;
   if (isLoading) return <Spinner />;
-  console.log(productDetails);
+  // console.log(productDetails);
 
   return (
     product && (
@@ -71,14 +81,30 @@ const ProductDetails = ({
             </aside>
             <aside className="col-sm-7">
               <article className="p-5">
-                <h3 className="title mb-3">{product.name}</h3>
+                <h3 className="product-details__title mb-3">{product.name}</h3>
+                <OverlayTrigger
+                  placement="right"
+                  delay={{ show: 150, hide: 300 }}
+                  overlay={renderTooltip}
+                >
+                  <div className="product-details__label">
+                    <span>+&nbsp;</span>
+
+                    <div className="product-details__img">
+                      <img
+                        src={require(`../../assets/prod-details/gift-icon.svg`)}
+                        alt="gift-icon"
+                      ></img>
+                    </div>
+                  </div>
+                </OverlayTrigger>
                 <div className="mb-3">
                   <var className="price h3 text-success">
                     <span className="num">
                       {product.price.toFixed(0)}
                       {` `}
                     </span>
-                    <span className="currency">₽</span>
+                    <span className="currency">$</span>
                   </var>
                 </div>
                 <dl>
@@ -117,12 +143,11 @@ const ProductDetails = ({
                   onClick={toggleAddProduct}
                   className={
                     !isAdded()
-                      ? "btn  btn-outline-primary"
-                      : "btn  btn-outline-danger"
+                      ? "btn prod-details btn-success"
+                      : "btn prod-details btn-outline-danger"
                   }
                 >
-                  <i className="fa fa-shopping-cart"></i>{" "}
-                  {!isAdded() ? "Add to Cart" : "Added to Cart"}
+                  {!isAdded() ? "В КОРЗИНУ" : "УБРАТЬ"}
                 </button>
               </article>
             </aside>
