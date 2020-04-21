@@ -21,6 +21,7 @@ import Error from "./components/Error";
 import MyToast from "./components/MyToast";
 import Oferta from "./pages/Oferta";
 import Delivery from "./pages/Delivery";
+import Contacts from "./pages/Contacts";
 
 import "./fakebackend/axiosData";
 
@@ -67,6 +68,7 @@ const App = () => {
           <Route path="/error" exact component={Error} />
           <Route path="/oferta" exact component={Oferta} />
           <Route path="/delivery" exact component={Delivery} />
+          <Route path="/contacts" exact component={Contacts} />
         </Switch>
         <Footer />
         <MyToast />

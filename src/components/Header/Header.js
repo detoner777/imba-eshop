@@ -53,7 +53,7 @@ const Header = ({ location, cart }) => {
             </Nav>
             <LinkContainer to="/cart">
               <Nav.Link>
-                <img src={shoping_cart} alt="shoping-cart" id="shoping_cart" />
+                <img src={shoping_cart} alt="" id="shoping_cart" />
                 {calcCartLength() > 0 && (
                   <div className="shopingcart-items-sum">
                     <span id="calc-length">{calcCartLength()}</span>

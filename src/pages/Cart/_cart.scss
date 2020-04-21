@@ -5,6 +5,11 @@
 .shopping-cart {
   max-width: 960px;
   margin: 0 auto;
+  h5 {
+    font-weight: 400;
+    margin-top: 3px;
+    color: #f66969;
+  }
 }
 
 .cart-trash-img {
@@ -68,3 +73,18 @@
     text-align: center;
   }
 }
+
+// --------------Cart footer start--------------
+.total-price {
+  float: right;
+  font-size: 2rem;
+  color: #f66969;
+  font-weight: 400;
+  line-height: 23px;
+  span {
+    color: black;
+    font-size: 1.3rem;
+  }
+}
+
+//--------------Cart footer end ---------------

@@ -63,7 +63,7 @@ const Cart = ({
                         style={{ paddingTop: 5 }}
                       >
                         <h5>
-                          <strong>${product.price.toFixed(2)}</strong>
+                          <strong>${product.price.toFixed(0)}</strong>
                         </h5>
                       </div>
                       <div className="col-4 col-sm-4 col-md-4">
@@ -104,14 +104,14 @@ const Cart = ({
 
               <div className="pull-right">
                 <Link to={"/products"}>
-                  <button className="btn btn-outline-primary pull-right">
-                    Continue shopping
+                  <button className="btn btn-outline-success pull-right">
+                    Перейти к выбору
                   </button>
                 </Link>
               </div>
             </div>
             <div className="card-footer">
-              <div className="coupon col-md-5 col-sm-5 no-padding-left pull-left">
+              {/* <div className="coupon col-md-5 col-sm-5 no-padding-left pull-left">
                 <div className="row">
                   <div className="col-6">
                     <input
@@ -128,19 +128,19 @@ const Cart = ({
                     />
                   </div>
                 </div>
-              </div>
-              <div className="pull-right" style={{ margin: 10 }}>
-                <a href="" className="btn btn-primary pull-right">
-                  Checkout
+              </div> */}
+              <div className="pull-left cart-footer" style={{ margin: 10 }}>
+                <a href="" className="btn btn-success pull-right">
+                  ОФОРМИТЬ ЗАКАЗ
                 </a>
-                <div className="pull-right" style={{ margin: 5 }}>
-                  Total price:{" "}
+                <div className="total-price" style={{ margin: 5 }}>
+                  <span>Всего: </span>
                   <b>
                     $
                     {cartProducts
                       .map((p) => p.product.price * p.quantity)
                       .reduce((a, b) => a + b, 0)
-                      .toFixed(2)}
+                      .toFixed(0)}
                   </b>
                 </div>
               </div>

@@ -104,7 +104,7 @@ const ProductDetails = ({
                       {product.price.toFixed(0)}
                       {` `}
                     </span>
-                    <span className="currency">₽</span>
+                    <span className="currency">$</span>
                   </var>
                 </div>
                 <dl>
@@ -143,8 +143,8 @@ const ProductDetails = ({
                   onClick={toggleAddProduct}
                   className={
                     !isAdded()
-                      ? "btn  btn-outline-primary"
-                      : "btn  btn-outline-danger"
+                      ? "btn prod-details btn-success"
+                      : "btn prod-details btn-outline-danger"
                   }
                 >
                   {!isAdded() ? "В КОРЗИНУ" : "УБРАТЬ"}

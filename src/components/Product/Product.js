@@ -99,7 +99,7 @@ const Product = ({
                 </h5>
               </div>
               <Button
-                variant={!isAdded() ? "outline-success" : "danger"}
+                variant={!isAdded() ? "success" : "outline-danger"}
                 onClick={toggleAddProduct}
                 className="add-to-cart mt-3"
               >
