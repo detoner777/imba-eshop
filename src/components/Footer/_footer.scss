@@ -170,7 +170,6 @@
       p {
         color: white;
         font-size: 16px;
-
       }
       .footer-foot__logo_img {
         display: flex;
@@ -198,4 +197,27 @@
     }
   }
 }
+
+@media only screen and (max-width: 321px) {
+  .footer-wrapper {
+    #footer-hr {
+    }
+    .footer-header {
+    }
+    .footer-foot-wrapper {
+    }
+    .footer__icons-mob {
+      .footer__link {
+      }
+      span {
+        .foot__social__icon {
+          transform: scale(1.2);
+          margin: 5px;
+          margin-bottom: 44px;
+        }
+      }
+    }
+  }
+}
+
 //----------Media Query end-----------

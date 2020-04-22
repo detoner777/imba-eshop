@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ContainerDimensions from "react-container-dimensions";
 
 import Carousel from "react-bootstrap/Carousel";
-import Row from "react-bootstrap/Row";
 
 import TipDota from "../../../assets/home/blogers/tip-dota.png";
 import SamJhon from "../../../assets/home/blogers/sam-jhon.png";
@@ -38,11 +37,7 @@ const BlogersSlider = () => {
               <Carousel.Item>
                 <div className="carousel-item-wrapper" style={{ width }}>
                   {" "}
-                  <img
-                    className="img-obj-fit"
-                    src={TipDota}
-                    alt="Zero slide"
-                  />
+                  <img className="img-obj-fit" src={TipDota} alt="Zero slide" />
                   <div className="carousel-content">
                     <h3>
                       Типичная дота{" "}

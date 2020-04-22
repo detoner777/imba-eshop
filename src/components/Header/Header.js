@@ -1,9 +1,10 @@
-import React, { Fragment, useEffect } from "react";
+import React from "react";
 import { withRouter } from "react-router";
 import { LinkContainer } from "react-router-bootstrap";
 
 import { connect } from "react-redux";
 
+import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -33,6 +34,16 @@ const Header = ({ location, cart }) => {
         <Navbar.Brand href="/home">
           <img src={logo} className="logo" alt="logo" />
         </Navbar.Brand>
+        {/* ---------Mobile shoping cart------- */}
+        <Link to="/cart" className="shoping_cart__mobile">
+          <img src={shoping_cart} alt="" id="shoping_cart_mobile" />
+          {calcCartLength() > 0 && (
+            <div className="shopingcart-items-sum___mobile">
+              <span id="calc-length__mobile">{calcCartLength()}</span>
+            </div>
+          )}
+        </Link>
+        {/* ---------Mobile shoping cart------- */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
@@ -51,7 +62,7 @@ const Header = ({ location, cart }) => {
                 <Nav.Link>Доставка</Nav.Link>
               </LinkContainer>
             </Nav>
-            <LinkContainer to="/cart">
+            <LinkContainer to="/cart" className="shoping_cart__desktop">
               <Nav.Link>
                 <img src={shoping_cart} alt="" id="shoping_cart" />
                 {calcCartLength() > 0 && (
