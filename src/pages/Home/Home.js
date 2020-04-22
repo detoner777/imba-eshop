@@ -1,9 +1,4 @@
-import React, { useEffect, useState, Fragment } from "react";
-
-import Carousel from "react-bootstrap/Carousel";
-import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
+import React, { Fragment } from "react";
 
 import SoldOut from "./components/SoldOut";
 import WinStrike from "./components/WinStrike";
