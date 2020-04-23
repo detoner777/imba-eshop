@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Fragment } from "react";
+import React from "react";
 
 import Mania from "../../../assets/sponsors-logo/mania.png";
 import Gameru from "../../../assets/sponsors-logo/gameru.png";
@@ -24,7 +24,7 @@ const SponsorAbout = () => {
           <div className="col-md-4">
             <div className="flip flip-horizontal">
               <div className="front">
-                <img src={Mania} />
+                <img src={Mania} alt="" />
               </div>
               <div className="back text-center">
                 <a href="https://www.igromania.ru/news/82540/indev.html">
@@ -41,7 +41,7 @@ const SponsorAbout = () => {
           <div className="col-md-4">
             <div className="flip flip-horizontal">
               <div className="front">
-                <img src={Gameru} />
+                <img src={Gameru} alt="" />
                 {/* <h2 className="text-shadow text-center h1">Gameru</h2> */}
               </div>
               <div className="back text-center">
@@ -57,7 +57,7 @@ const SponsorAbout = () => {
           <div className="col-md-4">
             <div className="flip flip-horizontal">
               <div className="front">
-                <img src={Brodude} />
+                <img src={Brodude} alt="" />
                 {/* <h2 className="text-shadow text-center h1">Brodude</h2> */}
               </div>
               <div className="back text-center">
@@ -75,7 +75,7 @@ const SponsorAbout = () => {
           <div className="col-md-4">
             <div className="flip flip-horizontal">
               <div className="front">
-                <img src={Gameguru} />
+                <img src={Gameguru} alt="" />
                 {/* <h2 className="text-shadow text-center h1">Gameru</h2> */}
               </div>
               <div className="back text-center">
@@ -93,7 +93,7 @@ const SponsorAbout = () => {
           <div className="col-md-4">
             <div className="flip flip-horizontal">
               <div className="front">
-                <img src={Sostav} />
+                <img src={Sostav} alt="" />
                 {/* <h2 className="text-shadow text-center h1">Gameru</h2> */}
               </div>
               <div className="back text-center">
@@ -111,7 +111,7 @@ const SponsorAbout = () => {
           <div className="col-md-4">
             <div className="flip flip-horizontal">
               <div className="front">
-                <img src={ProGamer} />
+                <img src={ProGamer} alt="" />
                 {/* <h2 className="text-shadow text-center h1">Gameru</h2> */}
               </div>
               <div className="back text-center">

@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import Toast from "react-bootstrap/Toast";
 import { showToast, hideToast } from "../../store/actions/toast";
 
-const MyToast = ({ toast: { show, title, text }, showToast, hideToast }) => {
+const MyToast = ({ toast: { show, title, text }, hideToast }) => {
   return (
     <div
       style={{
@@ -29,7 +29,6 @@ const MyToast = ({ toast: { show, title, text }, showToast, hideToast }) => {
             alt=""
           />
           <strong className="mr-auto">{title}</strong>
-          {/* <small>right now</small> */}
         </Toast.Header>
         <Toast.Body>{text}</Toast.Body>
       </Toast>

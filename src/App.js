@@ -30,7 +30,7 @@ import throttle from "lodash/throttle";
 
 const App = () => {
   const persistedState = loadState();
-  const initialState = {};
+  // const initialState = {};
 
   const store = createStore(
     rootReducer,

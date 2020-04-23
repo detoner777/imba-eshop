@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import trash from "../../assets/icons/trash.png";
 import korzina from "../../assets/icons/korzina.svg";
 
-import Row from "react-bootstrap/Row";
-
 import {
   addProductToCart,
   removeProductsFromCart,
@@ -111,26 +109,8 @@ const Cart = ({
               </div>
             </div>
             <div className="card-footer">
-              {/* <div className="coupon col-md-5 col-sm-5 no-padding-left pull-left">
-                <div className="row">
-                  <div className="col-6">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="cupone code"
-                    />
-                  </div>
-                  <div className="col-6">
-                    <input
-                      type="submit"
-                      className="btn btn-default"
-                      value="Use cupone"
-                    />
-                  </div>
-                </div>
-              </div> */}
               <div className="pull-left cart-footer" style={{ margin: 10 }}>
-                <a href="" className="btn btn-success pull-right">
+                <a href="/products" className="btn btn-success pull-right">
                   ОФОРМИТЬ ЗАКАЗ
                 </a>
                 <div className="total-price" style={{ margin: 5 }}>

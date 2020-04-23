@@ -60,7 +60,7 @@ const Delivery = () => {
       <div className="delivery-block__subheader">
         <span>03</span> Самовывоз PickPoint
       </div>
-      <div class="delivery-block__txt">
+      <div className="delivery-block__txt">
         <ul>
           <li id="del_li">
             - Доставка осуществляется только до пункта выдачи или постамата.
@@ -85,7 +85,7 @@ const Delivery = () => {
       <div className="delivery-block__subheader">
         <span>01</span> Оплата картой
       </div>
-      <ul class="delivery-block__list">
+      <ul className="delivery-block__list">
         <li>
           - Бесплатная доставка при заказе от 1500 р и онлайн-оплате картой
         </li>

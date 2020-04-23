@@ -91,6 +91,36 @@ const Footer = () => {
           </Link>
         </div>
       </div>
+      {/* -------------Mob layout start------------ */}
+      <div className="footer__icons-mob">
+        <span>
+          <a href="https://twitter.com/IMBAenergy">
+            <Twitter className="foot__social__icon twitter" />
+          </a>
+          <a href="https://www.instagram.com/imba_energy/">
+            <Instagram className="foot__social__icon instagram" />
+          </a>
+          <a href="http://vk.com/imbaenergy">
+            <Vk className="foot__social__icon vk" />
+          </a>
+        </span>
+        <p>
+          {" "}
+          <a className="footer__link" href="mailto:shop@imba.shop">
+            shop@imba.shop
+          </a>
+        </p>
+      </div>
+      <div className="footer__logo_mob">
+        <div className="footer-foot__logo_img">
+          <Age className="footer-foot__ages" />{" "}
+          <Link to={"/home"}>
+            <Logo className="footer-foot__logo" />
+          </Link>
+        </div>
+        <p>imba.shop | 2019</p>
+      </div>
+      {/* -------------Mob layout end------------ */}
     </div>
   );
 };
