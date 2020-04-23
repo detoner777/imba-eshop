@@ -1,5 +1,5 @@
 export const config = {
-  baseURL: "http://localhost:3000",
+  baseURL: "http://detoner777.github.io/imba-eshop",
   products: "/products",
   pageSize: 12,
   advertIndex: 5,
