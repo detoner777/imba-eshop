@@ -31,11 +31,11 @@ const Header = ({ location, cart }) => {
       sticky="top"
     >
       <Container>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/imba-eshop/home">
           <img src={logo} className="logo" alt="logo" />
         </Navbar.Brand>
         {/* ---------Mobile shoping cart------- */}
-        <Link to="/cart" className="shoping_cart__mobile">
+        <Link to="imba-eshop/cart" className="shoping_cart__mobile">
           <img src={shoping_cart} alt="" id="shoping_cart_mobile" />
           {calcCartLength() > 0 && (
             <div className="shopingcart-items-sum___mobile">
@@ -49,20 +49,20 @@ const Header = ({ location, cart }) => {
           <Nav className="mr-auto">
             <Nav className="nav-pages" activeKey={pathname}>
               {" "}
-              <LinkContainer to="/home">
+              <LinkContainer to="/imba-eshop/home">
                 <Nav.Link>Главная</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/products">
+              <LinkContainer to="/imba-eshop/products">
                 <Nav.Link>Магазин</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/contacts">
+              <LinkContainer to="/imba-eshop/contacts">
                 <Nav.Link>Контакты</Nav.Link>
               </LinkContainer>
-              <LinkContainer className="header__delivery" to="/delivery">
+              <LinkContainer className="/header__delivery" to="/imba-eshop/delivery">
                 <Nav.Link>Доставка</Nav.Link>
               </LinkContainer>
             </Nav>
-            <LinkContainer to="/cart" className="shoping_cart__desktop">
+            <LinkContainer to="/imba-eshop/cart" className="shoping_cart__desktop">
               <Nav.Link>
                 <img src={shoping_cart} alt="" id="shoping_cart" />
                 {calcCartLength() > 0 && (
