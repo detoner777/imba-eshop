@@ -58,12 +58,16 @@ const App = () => {
       <Provider store={store}>
         <Header />
         <Switch>
-          <Route exact path="/">
-            <Redirect to="imba-eshop/home" />
+          <Route exact path="/imba-eshop">
+            <Redirect to="/imba-eshop/home" />
           </Route>
           <Route path="/imba-eshop/home" exact component={Home} />
           <Route path="/imba-eshop/products" exact component={Products} />
-          <Route path="/imba-eshop/product-details/:id" exact component={ProductDetails} />
+          <Route
+            path="/imba-eshop/product-details/:id"
+            exact
+            component={ProductDetails}
+          />
           <Route path="/imba-eshop/cart" exact component={Cart} />
           <Route path="/imba-eshop/error" exact component={Error} />
           <Route path="/imba-eshop/oferta" exact component={Oferta} />
