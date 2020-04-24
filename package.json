@@ -2,7 +2,7 @@
   "name": "imba-eshop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://detoner777.github.io/imba-eshop",
+  "homepage": "http://detoner777.github.io/imba-eshop/home",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
