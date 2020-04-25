@@ -19,7 +19,7 @@ fully responsive production ready e-shop with fake backend data (REACT/REDUX/SCS
 - .ENV, Google Map Reat, React Container Dimensions, React infinite scroller
 - Axios, Axios Mock Adapter, Faker
 
-### Libraries used
+### Run
 - npm install
 - npm run start app wil be loaded on http://localhost:3000
 
