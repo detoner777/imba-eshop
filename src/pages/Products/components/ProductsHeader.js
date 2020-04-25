@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductsHeader = () => {
   return (
@@ -7,9 +8,9 @@ const ProductsHeader = () => {
         <div className="products-header-wrapper">
           <p>Купи комбо</p>
           <p>и ВЫИГРАЙ CYBERPUNK 2077 </p>
-          <a href="*" className="index-header__btn">
+          <Link to="/cart" className="index-header__btn">
             КУПИТЬ КОМБО
-          </a>
+          </Link>
         </div>
       </div>
       <div className="products-header-foot"></div>

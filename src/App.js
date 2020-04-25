@@ -4,6 +4,7 @@ import {
   Route,
   Switch,
   Redirect,
+  HashRouter,
 } from "react-router-dom";
 
 import { compose, createStore, applyMiddleware } from "redux";
@@ -58,21 +59,21 @@ const App = () => {
       <Provider store={store}>
         <Header />
         <Switch>
-          <Route exact path="/imba-eshop">
-            <Redirect to="/imba-eshop/home" />
+          <Route exact path="/">
+            <Redirect to="/home" />
           </Route>
-          <Route path="/imba-eshop/home" exact component={Home} />
-          <Route path="/imba-eshop/products" exact component={Products} />
+          <Route path="/home" exact component={Home} />
+          <Route path="/products" exact component={Products} />
           <Route
-            path="/imba-eshop/product-details/:id"
+            path="/product-details/:id"
             exact
             component={ProductDetails}
           />
-          <Route path="/imba-eshop/cart" exact component={Cart} />
-          <Route path="/imba-eshop/error" exact component={Error} />
-          <Route path="/imba-eshop/oferta" exact component={Oferta} />
-          <Route path="/imba-eshop/delivery" exact component={Delivery} />
-          <Route path="/imba-eshop/contacts" exact component={Contacts} />
+          <Route path="/cart" exact component={Cart} />
+          <Route path="/error" exact component={Error} />
+          <Route path="/oferta" exact component={Oferta} />
+          <Route path="/delivery" exact component={Delivery} />
+          <Route path="/contacts" exact component={Contacts} />
         </Switch>
         <Footer />
         <MyToast />
