@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/imba-eshop/static/css/main.4d677871.chunk.css",
-    "main.js": "/imba-eshop/static/js/main.a152172f.chunk.js",
-    "main.js.map": "/imba-eshop/static/js/main.a152172f.chunk.js.map",
+    "main.js": "/imba-eshop/static/js/main.3020f4f1.chunk.js",
+    "main.js.map": "/imba-eshop/static/js/main.3020f4f1.chunk.js.map",
     "runtime-main.js": "/imba-eshop/static/js/runtime-main.7f44a4c8.js",
     "runtime-main.js.map": "/imba-eshop/static/js/runtime-main.7f44a4c8.js.map",
     "static/js/2.84708b30.chunk.js": "/imba-eshop/static/js/2.84708b30.chunk.js",
     "static/js/2.84708b30.chunk.js.map": "/imba-eshop/static/js/2.84708b30.chunk.js.map",
     "index.html": "/imba-eshop/index.html",
-    "precache-manifest.45e3d2d135b3fdb83163bc1e2b8d02db.js": "/imba-eshop/precache-manifest.45e3d2d135b3fdb83163bc1e2b8d02db.js",
+    "precache-manifest.7855dcccf50b45ced6f1406956969877.js": "/imba-eshop/precache-manifest.7855dcccf50b45ced6f1406956969877.js",
     "service-worker.js": "/imba-eshop/service-worker.js",
     "static/css/main.4d677871.chunk.css.map": "/imba-eshop/static/css/main.4d677871.chunk.css.map",
     "static/js/2.84708b30.chunk.js.LICENSE.txt": "/imba-eshop/static/js/2.84708b30.chunk.js.LICENSE.txt",
@@ -73,6 +73,6 @@
     "static/js/runtime-main.7f44a4c8.js",
     "static/js/2.84708b30.chunk.js",
     "static/css/main.4d677871.chunk.css",
-    "static/js/main.a152172f.chunk.js"
+    "static/js/main.3020f4f1.chunk.js"
   ]
 }

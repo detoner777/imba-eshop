@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0368fccfae8e9ef52416480a493e230",
+    "revision": "14dc28fcdd614b663afeae608d72c3ca",
     "url": "/imba-eshop/index.html"
   },
   {
-    "revision": "08517bae466b53a63c83",
+    "revision": "f6bb4d55e737c725b465",
     "url": "/imba-eshop/static/css/main.4d677871.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imba-eshop/static/js/2.84708b30.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "08517bae466b53a63c83",
-    "url": "/imba-eshop/static/js/main.a152172f.chunk.js"
+    "revision": "f6bb4d55e737c725b465",
+    "url": "/imba-eshop/static/js/main.3020f4f1.chunk.js"
   },
   {
     "revision": "dbdc9c87e11dda7a1697",

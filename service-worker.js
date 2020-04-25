@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/imba-eshop/precache-manifest.45e3d2d135b3fdb83163bc1e2b8d02db.js"
+  "/imba-eshop/precache-manifest.7855dcccf50b45ced6f1406956969877.js"
 );
 
 self.addEventListener('message', (event) => {
