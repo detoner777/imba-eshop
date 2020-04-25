@@ -59,16 +59,13 @@ const App = () => {
       <Provider store={store}>
         <Header />
         <Switch>
-          <Route exact path="/">
+          {/* use imba-eshop default redirect for GH pages quick deploy */}
+          <Route exact path="/imba-eshop/"> 
             <Redirect to="/home" />
           </Route>
           <Route path="/home" exact component={Home} />
           <Route path="/products" exact component={Products} />
-          <Route
-            path="/product-details/:id"
-            exact
-            component={ProductDetails}
-          />
+          <Route path="/product-details/:id" exact component={ProductDetails} />
           <Route path="/cart" exact component={Cart} />
           <Route path="/error" exact component={Error} />
           <Route path="/oferta" exact component={Oferta} />
