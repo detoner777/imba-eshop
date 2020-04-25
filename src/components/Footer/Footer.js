@@ -80,10 +80,10 @@ const Footer = () => {
         {/* ------------ */}
         <div className="footer-foot__oferta">
           <h5>IMBA.SHOP</h5>
-          <Link className="foot__oferta_logo" to="/exchange">
+          <Link className="foot__oferta_logo" to="/home">
             Возврат
           </Link>
-          <Link className="foot__oferta_logo" to="/privacy_policy">
+          <Link className="foot__oferta_logo" to="/home">
             Политика конфидициальности
           </Link>
           <Link className="foot__oferta_logo" to="/oferta">

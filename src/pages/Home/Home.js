@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 import SoldOut from "./components/SoldOut";
 import WinStrike from "./components/WinStrike";
@@ -26,9 +27,9 @@ const Home = () => {
               </div>
               <div className="index-header__line1">Участвуй</div>
               <div className="index-header__line2">В розыгрыше!</div>
-              <a href="*" className="index-header__btn">
+              <Link to="/products" className="index-header__btn">
                 Участвуй
-              </a>
+              </Link>
             </div>
           </div>{" "}
         </div>
